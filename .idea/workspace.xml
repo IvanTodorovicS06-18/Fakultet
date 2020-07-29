@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8181a268-4a4c-497a-822d-544a68670653" name="Default Changelist" comment="" />
+    <list default="true" id="8181a268-4a4c-497a-822d-544a68670653" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,6 +44,9 @@
       </path>
     </expand>
     <select />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JsFlowSettings">
     <service-enabled>true</service-enabled>
@@ -139,6 +144,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1esRsOXkSA9J8QXiOhWYVntpUHm" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -147,6 +153,7 @@
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Http/Controllers" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -182,7 +189,7 @@
       <workItem from="1595336507538" duration="6131000" />
       <workItem from="1595419527858" duration="1316000" />
       <workItem from="1595924194540" duration="23465000" />
-      <workItem from="1596011430108" duration="620000" />
+      <workItem from="1596011430108" duration="2004000" />
     </task>
     <servers />
   </component>
@@ -218,9 +225,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1595110237193" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1595346288196">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1596017712968">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1595346288196" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1596017712968" />
   </component>
 </project>
