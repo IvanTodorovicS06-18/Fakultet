@@ -23,7 +23,7 @@ class MainProfesorController extends Controller
 
 
         $predmeti = Predmet::whereHas('profesor',function ($query){
-            return $query->where('profesor_id',2);
+            return $query->where('profesor_id',1);
         })->get();
 
 //        dd($profesor);
