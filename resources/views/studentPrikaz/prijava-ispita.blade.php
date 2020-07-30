@@ -38,15 +38,43 @@
             <th>Profesor</th>
             <th>Prijavi Ispit</th>
         </tr>
+        <form action="/ispit-save" method="POST">
+            @csrf
+        <label>jan</label>
+        <tr> <input type="radio" name="ispitni_rok" value="jan">
 
+            <label>feb</label>
+        <input type="radio" name="ispitni_rok" value="feb">
+
+            <label>jun</label>
+            <input type="radio" name="ispitni_rok" value="jun">
+
+            <label>jul</label>
+            <input type="radio" name="ispitni_rok" value="jul">
+
+            <label>avg</label>
+            <input type="radio" name="ispitni_rok" value="avg">
+
+            <label>sep</label>
+            <input type="radio" name="ispitni_rok" value="sep">
+        <tr>
+
+            </tr>
             @foreach($predmeti as $predmet)
             <tr>
+
+
                 <td>{{$predmet->naziv}}</td>
                 <td> {{$predmet->datum_polaganja}}</td>
                 <td>{{$predmet->profesor->name}}</td>
-                <td><input type="checkbox"></td>
-            </tr>
-            @endforeach
+
+                    <td> <input type="checkbox" name="predmet_id" value="{{$predmet->id}}"></td>
+                    @endforeach
+                    <input type="submit">
+                </form>
+
+
+
 
 
     </table>

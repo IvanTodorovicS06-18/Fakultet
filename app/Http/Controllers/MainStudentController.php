@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Ispit;
 use App\Predmet;
+use App\StudentPredmet;
 use Illuminate\Http\Request;
 use App\Student;
 use Illuminate\Support\Facades\Auth;
@@ -20,7 +22,7 @@ class MainStudentController extends Controller
         $this->middleware('auth:student');
     }
 
-    public function prijavaIspita(){
+    public function prijavaIspita(Ispit $ispit){
 
         $student = Student::find(Auth::user()->id);
 
@@ -31,10 +33,20 @@ class MainStudentController extends Controller
         $predmeti = Predmet::with('studenti')->whereHas('studenti',function ($query) use($studentov_id){
             return $query->where('student_id','=',$studentov_id);
         })->get();
+        $ispit = Ispit::all();
 
 
-        return view('studentPrikaz.prijava-ispita',['predmeti' => $predmeti]);
+        return view('studentPrikaz.prijava-ispita',['predmeti' => $predmeti,'ispit' => $ispit]);
     }
+
+    public function studentPrijava(Predmet $predmet,Request $request,Ispit $ispit){
+        $ispit = Ispit::query()->create([
+            'ispitni_rok' => $request->input('ispitni_rok'),
+            'student_id' => auth()->id(),
+            'predmet_id' => $request->input('predmet_id')
+        ]);
+        return redirect('/student-profil');
+}
 
     public function studentProfil(Student $student){
 

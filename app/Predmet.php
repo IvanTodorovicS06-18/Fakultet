@@ -13,7 +13,11 @@ class Predmet extends Model
     }
 
     public function studenti(){
-        return $this->belongsToMany(Student::class,'student_predmet')->withPivot('ispitni_rok')->withTimestamps();
+        return $this->belongsToMany(Student::class,'student_predmet')->withTimestamps();
+    }
+
+    public function student(){
+        return $this->belongsToMany(Student::class,'Ispit')->withPivot('ispitni_rok')->withTimestamps();
     }
 
 }
