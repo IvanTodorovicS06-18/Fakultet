@@ -11,8 +11,21 @@ class Student extends Authenticatable
     protected $table = 'studenti';
     protected $guard = 'student';
 
+
+//    public function pomocna(){
+//
+//        $student = Student::find(Auth::user()->id);
+//
+//        $studentov_id = $student->id;
+//
+//
+//        $predmeti = Predmet::with('studenti')->whereHas('studenti',function ($query) use($studentov_id){
+//            return $query->where('student_id','=',$studentov_id);
+//        })->get();
+//    }
+
     public function predmeti(){
-        return $this->belongsToMany(Predmet::class,'student_predmet')->withTimestamps();
+        return $this->belongsToMany(Predmet::class,'student_predmet')->withPivot('ispitni_rok')->withTimestamps();
     }
 
 

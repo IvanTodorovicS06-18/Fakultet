@@ -19,6 +19,7 @@ class CreatePredmetTable extends Migration
             $table->foreign('profesor_id')->references('id')->on('profesori')->onDelete('cascade');
             $table->string('naziv');
             $table->integer('espb');
+            $table->date('datum_polaganja')->nullable();
             $table->timestamps();
         });
     }

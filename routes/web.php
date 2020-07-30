@@ -15,9 +15,13 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+//Student
+Route::get('/student-profil','MainStudentController@studentProfil');
+Route::get('/prijava-ispita','MainStudentController@prijavaIspita');
 
-Route::get('/student-prikaz','MainStudentController@studentPrikaz');
 
+
+//Profesor
 Route::get('/profesor-prikaz','MainProfesorController@profesorPrikaz');
 
 

@@ -19,11 +19,10 @@ class MainProfesorController extends Controller
 
         $profesor = Profesor::find(Auth::user()->id);
         $id = $profesor->id;
-//        dd($id);
 
 
-        $predmeti = Predmet::whereHas('profesor',function ($query){
-            return $query->where('profesor_id',2);
+        $predmeti = Predmet::whereHas('profesor',function ($query) use($id){
+            return $query->where('profesor_id',$id);
         })->get();
 
 //        dd($profesor);

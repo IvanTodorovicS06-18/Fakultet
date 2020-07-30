@@ -20,24 +20,42 @@ class MainStudentController extends Controller
         $this->middleware('auth:student');
     }
 
-    public function studentPrikaz(Student $student){
+    public function prijavaIspita(){
 
-        $predmeti = Predmet::with('studenti')->whereHas('studenti',function ($query){
-            return $query->where('student_id',1);
+        $student = Student::find(Auth::user()->id);
+
+
+        $studentov_id = $student->id;
+
+    //GLedaj da ubacis ovo u funckiju u model jer se kod ponavlja(greota)
+        $predmeti = Predmet::with('studenti')->whereHas('studenti',function ($query) use($studentov_id){
+            return $query->where('student_id','=',$studentov_id);
         })->get();
 
-//        $studenti = Student::with('predmeti')->whereHas('predmeti',function($query){
-//            return $query->where('predmet_id',1);
+
+        return view('studentPrikaz.prijava-ispita',['predmeti' => $predmeti]);
+    }
+
+    public function studentProfil(Student $student){
+
+        $student = Student::find(Auth::user()->id);
+
+
+        $studentov_id = $student->id;
+
+
+        $predmeti = Predmet::with('studenti')->whereHas('studenti',function ($query) use($studentov_id){
+            return $query->where('student_id','=',$studentov_id);
+        })->get();
+
+
+//        $predmeti = Student::with('predmeti')->whereHas('predmeti',function($query){
+//            return $query->where('predmet_id','=',2);
 //        })->get();
 
         foreach ($predmeti as $predmet){
             echo $predmet->naziv .  '<br />';
         }
-//        $student = Student::find(Auth::user()->id);
-//        $student->predmeti()->attach(2);
-//        dd($student);
-
-
 
 //        return view('studentPrikaz.prikaz');
     }
