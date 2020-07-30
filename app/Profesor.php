@@ -7,6 +7,11 @@ class Profesor extends Authenticatable
 {
     protected $table = 'profesori';
     protected $guard = 'profesor';
+
+    public function predmeti(){
+        return $this->hasMany(Predmet::class);
+    }
+
     /**
      * The attributes that are mass assignable.
      *

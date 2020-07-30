@@ -1,8 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand />
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="fe53d791-f3c9-4391-b9b7-022b34a43758" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MainProfesorController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MainProfesorController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MainStudentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MainStudentController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Profesor.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Profesor.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Student.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Student.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -10,18 +21,60 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ComposerSettings">
-    <execution>
-      <executable />
-    </execution>
+    <execution />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../proba1" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ComposerRunConfigurationType" factoryName="Composer Script">
+      <option name="pathToComposerJson" value="$PROJECT_DIR$/composer.json" />
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="608" y="208" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596022067020">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="608" y="208" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1596022067020" />
+    <state x="0" y="621" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1596032946704">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="0" y="621" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1596032946704" />
+    <state x="809" y="284" key="FileChooserDialogImpl" timestamp="1596032774017">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="809" y="284" key="FileChooserDialogImpl/0.0.2048.1112@0.0.2048.1112" timestamp="1596032774017" />
+    <state x="978" y="546" key="NewPhpFileDialog" timestamp="1596028478536">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="978" y="546" key="NewPhpFileDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1596028478536" />
+    <state x="898" y="437" width="316" height="245" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1596023411458">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="898" y="437" width="316" height="245" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.2048.1112@0.0.2048.1112" timestamp="1596023411458" />
   </component>
 </project>

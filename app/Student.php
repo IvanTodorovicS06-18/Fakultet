@@ -10,6 +10,12 @@ class Student extends Authenticatable
 {
     protected $table = 'studenti';
     protected $guard = 'student';
+
+    public function predmeti(){
+        return $this->belongsToMany(Predmet::class,'student_predmet')->withTimestamps();
+    }
+
+
     /**
      * The attributes that are mass assignable.
      *
