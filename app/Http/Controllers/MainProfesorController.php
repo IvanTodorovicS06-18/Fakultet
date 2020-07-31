@@ -9,11 +9,7 @@ use Illuminate\Support\Facades\Auth;
 
 class MainProfesorController extends Controller
 {
-    /**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
+
 
     public function profesorPrikaz(){
 
@@ -38,11 +34,7 @@ class MainProfesorController extends Controller
         $this->middleware('auth:profesor');
     }
 
-    /**
-     * Show the application dashboard.
-     *
-     * @return \Illuminate\Contracts\Support\Renderable
-     */
+
     public function index()
     {
         return view('profesor');

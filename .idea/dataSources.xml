@@ -7,7 +7,7 @@
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://localhost:3306/faks</jdbc-url>
     </data-source>
-    <data-source source="LOCAL" name="fakultet@localhost" uuid="e3629c72-7995-4a75-ae98-9d07399898d8">
+    <data-source source="LOCAL" name="fakultet@localhost" uuid="19990954-1b92-44c8-8946-efcf7e084e89">
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>

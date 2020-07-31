@@ -25,7 +25,10 @@ class Student extends Authenticatable
 //    }
 
     public function predmeti(){
-        return $this->belongsToMany(Predmet::class,'student_predmet')->withPivot('ispitni_rok')->withTimestamps();
+        return $this->belongsToMany(Predmet::class,'student_predmet')->withTimestamps();
+    }
+    public function predmet(){
+        return $this->belongsToMany(Predmet::class,'Ispiti')->withPivot('ispitni_rok')->withTimestamps();
     }
 
 
