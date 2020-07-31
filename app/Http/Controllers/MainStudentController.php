@@ -40,11 +40,10 @@ class MainStudentController extends Controller
     }
 
     public function studentPrijava(Predmet $predmet,Request $request,Ispit $ispit){
-        $ispit = Ispit::query()->create([
-            'ispitni_rok' => $request->input('ispitni_rok'),
-            'student_id' => auth()->id(),
-            'predmet_id' => $request->input('predmet_id')
-        ]);
+
+        $student = Student::find(Auth::user()->id);
+        $student->predmet()->attach($request->predmet);
+
         return redirect('/student-profil');
 }
 
