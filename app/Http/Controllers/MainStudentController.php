@@ -39,10 +39,16 @@ class MainStudentController extends Controller
         return view('studentPrikaz.prijava-ispita',['predmeti' => $predmeti,'ispit' => $ispit]);
     }
 
+<<<<<<< HEAD
     public function studentPrijava(Predmet $predmet,Request $request,Ispit $ispit){
 
         $student = Student::find(Auth::user()->id);
         $student->predmet()->attach($request->predmet);
+=======
+    public function studentPrijava(Predmet $predmet,Request $request,Ispit $ispit,Student $student){
+        $student = Student::find(Auth::user()->id);
+        $student->predmet()->attach($request->predmet)->withPivot('ispitni_rok');
+>>>>>>> 64c073fff096ddbfe424f924de4195e041c679c3
 
         return redirect('/student-profil');
 }
