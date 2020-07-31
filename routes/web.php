@@ -18,7 +18,7 @@ Route::get('/', function () {
 //Student
 Route::get('/student-profil','MainStudentController@studentProfil');
 Route::get('/prijava-ispita','MainStudentController@prijavaIspita');
-Route::post('/ispit-save','MainStudentController@studentPrijava');
+Route::put('/ispit-save','MainStudentController@studentPrijava');
 
 
 

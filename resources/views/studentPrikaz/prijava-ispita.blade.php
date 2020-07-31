@@ -40,6 +40,7 @@
         </tr>
         <form action="/ispit-save" method="POST">
             @csrf
+            @method('PUT')
         <label>jan</label>
         <tr> <input type="radio" name="ispitni_rok" value="jan">
 
@@ -68,7 +69,7 @@
                 <td> {{$predmet->datum_polaganja}}</td>
                 <td>{{$predmet->profesor->name}}</td>
 
-                    <td> <input type="checkbox" name="predmet_id" value="{{$predmet->id}}"></td>
+                    <td> <input type="checkbox" name="predmet[]" value="{{$predmet->id}}"></td>
                     @endforeach
                     <input type="submit">
                 </form>

@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="08ab69a0-e6ee-456e-af55-b4b19a5dd815" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MainProfesorController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MainProfesorController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MainStudentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MainStudentController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Predmet.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Predmet.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Student.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Student.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/studentPrikaz/prijava-ispita.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/studentPrikaz/prijava-ispita.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -15,7 +12,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings">
+  <component name="ComposerSettings" doNotAsk="true">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution>
       <executable />
@@ -168,7 +165,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1596097679301</updated>
-      <workItem from="1596097684041" duration="5818000" />
+      <workItem from="1596097684041" duration="6417000" />
+      <workItem from="1596197229756" duration="2766000" />
     </task>
     <servers />
   </component>
@@ -184,13 +182,13 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1596112657743" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1596097692290">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1596198268060">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1596097692290" />
-    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1596097684135">
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1596198268060" />
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1596197230504">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1596097684135" />
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1596197230504" />
   </component>
 </project>
