@@ -24,6 +24,7 @@ Route::put('/ispit-save','MainStudentController@studentPrijava');
 
 //Profesor
 Route::get('/profesor-prikaz','MainProfesorController@profesorPrikaz');
+Route::get('/profesor-ispiti','MainProfesorController@prikzaprofinihispita');
 
 
 

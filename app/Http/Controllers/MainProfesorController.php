@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Ispit;
 use App\Predmet;
 use App\Profesor;
 use Illuminate\Http\Request;
@@ -29,6 +30,19 @@ class MainProfesorController extends Controller
 //       return view('profesorPrikaz.prikaz');
     }
 
+    public function prikzaprofinihispita(){
+       $profesor = Profesor::find(Auth::user()->id);
+       $profesor_id =$profesor->id;
+
+        $predmeti = Predmet::with('profesor')->whereHas('profesor',function ($query) use($profesor_id){
+            return $query->where('profesor_id','=',$profesor_id);
+        })->get();
+
+
+
+
+        return view('profesorPrikaz.profaispiti',['predmeti' => $predmeti]);
+    }
     public function __construct()
     {
         $this->middleware('auth:profesor');
