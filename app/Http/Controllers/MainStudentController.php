@@ -29,7 +29,7 @@ class MainStudentController extends Controller
 
         $studentov_id = $student->id;
 
-    //GLedaj da ubacis ovo u funckiju u model jer se kod ponavlja(greota)
+        //GLedaj da ubacis ovo u funckiju u model jer se kod ponavlja(greota)
         $predmeti = Predmet::with('studenti')->whereHas('studenti',function ($query) use($studentov_id){
             return $query->where('student_id','=',$studentov_id);
         })->get();
@@ -41,9 +41,16 @@ class MainStudentController extends Controller
 
     public function studentPrijava(Predmet $predmet,Request $request,Ispit $ispit,Student $student){
         $student = Student::find(Auth::user()->id);
+<<<<<<< HEAD
         $student->predmet()->attach($request->predmet,['ispitni_rok' => $request->input('ispitni_rok')]);
+=======
+        $student->predmet()->attach($request->predmet);
+        $student->predmet()->attach($request->predmet,['ispitni_rok' => $request->input('ispitni_rok')]);
+
+
+>>>>>>> 7f2ad511823f5388a3b8fd09edf5fc36e9db88f3
         return redirect('/student-profil');
-}
+    }
 
     public function studentProfil(Student $student){
 
@@ -62,11 +69,7 @@ class MainStudentController extends Controller
 //            return $query->where('predmet_id','=',2);
 //        })->get();
 
-        foreach ($predmeti as $predmet){
-            echo $predmet->naziv .  '<br />';
-        }
-
-//        return view('studentPrikaz.prikaz');
+        return view('studentPrikaz.prikaz',['predmeti' => $predmeti]);
     }
 
     /**

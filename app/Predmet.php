@@ -20,4 +20,8 @@ class Predmet extends Model
         return $this->belongsToMany(Student::class,'Ispit')->withPivot('ispitni_rok')->withTimestamps();
     }
 
+    public function kolokvijum(){
+        return $this->hasMany(Kolokvijum::class);
+    }
+
 }
