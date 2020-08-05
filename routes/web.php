@@ -15,6 +15,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
+
+
 //Student
 Route::get('/student-profil','MainStudentController@studentProfil');
 Route::get('/prijava-ispita','MainStudentController@prijavaIspita');
@@ -26,6 +29,8 @@ Route::put('/ispit-save','MainStudentController@studentPrijava');
 Route::get('/profesor-prikaz','MainProfesorController@profesorPrikaz');
 
 
+//Kolokvijum
+Route::get('/kolokvijum-prikaz','KolokvijumController@kolokvijumPrikaz');
 
 Auth::routes();
 
@@ -56,5 +61,3 @@ Route::prefix('studentska_sluzba')->group(function() {
     Route::get('/login', 'authStudentskaSluzba\LoginController@showLoginForm')->name('studentska_sluzba.login');
     Route::post('/login', 'authStudentskaSluzba\LoginController@login')->name('studentska_sluzba.login.submit');
 });
-
-

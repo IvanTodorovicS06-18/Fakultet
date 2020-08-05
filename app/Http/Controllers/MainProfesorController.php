@@ -17,16 +17,21 @@ class MainProfesorController extends Controller
         $id = $profesor->id;
 
 
-        $predmeti = Predmet::whereHas('profesor',function ($query) use($id){
+        $predmeti_profesora = Predmet::whereHas('profesor',function ($query) use($id){
             return $query->where('profesor_id',$id);
         })->get();
 
+        $predmeti = Predmet::with('studenti')->whereHas('studenti',function ($query) {
+            return $query->where('student_id','=',1);
+        })->get();
+
+//         dd($predmeti );
 //        dd($profesor);
 
-        foreach ($predmeti as $predmet){
-            echo $predmet->naziv .  '<br />';
-        }
-//       return view('profesorPrikaz.prikaz');
+//        foreach ($predmeti as $predmet){
+//            echo $predmet->naziv .  '<br />';
+//        }
+       return view('profesorPrikaz.prikaz',['predmeti_profesora' => $predmeti_profesora, 'predmeti' => $predmeti]);
     }
 
     public function __construct()
