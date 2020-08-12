@@ -50,6 +50,9 @@
             </td>
         </tr>
     @endforeach
+    @foreach($predmeti as $predmet)
+        <p>{{$predmet->studenti->name}}</p>
+        @endforeach
 
 
 </table>

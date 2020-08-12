@@ -38,6 +38,13 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/useradd','MainAdminController@addpage');
 Route::post('/usersave','MainAdminController@save');
+Route::get('/pocetna-strana','MainAdminController@pocetna');
+Route::get('/profaadd','MainAdminController@profaForma');
+Route::post('/profasave','MainAdminController@ubaciprofu');
+Route::get('/sluzba-add','MainAdminController@sluzbaForma');
+Route::post('sluzba-save','MainAdminController@ubaciClanaSluzbe');
+Route::get('/student-add','MainAdminController@studentForma');
+Route::post('student-save','MainAdminController@ubaciStudenta');
 
 Route::prefix('student')->group(function() {
     Route::get('/', 'MainStudentController@index')->name('student.home');

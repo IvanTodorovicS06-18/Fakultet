@@ -41,14 +41,10 @@ class MainStudentController extends Controller
 
     public function studentPrijava(Predmet $predmet,Request $request,Ispit $ispit,Student $student){
         $student = Student::find(Auth::user()->id);
-<<<<<<< HEAD
-        $student->predmet()->attach($request->predmet,['ispitni_rok' => $request->input('ispitni_rok')]);
-=======
-        $student->predmet()->attach($request->predmet);
+
         $student->predmet()->attach($request->predmet,['ispitni_rok' => $request->input('ispitni_rok')]);
 
 
->>>>>>> 7f2ad511823f5388a3b8fd09edf5fc36e9db88f3
         return redirect('/student-profil');
     }
 

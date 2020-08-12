@@ -36,15 +36,13 @@ class MainProfesorController extends Controller
     }
 
     public function prikzaprofinihispita(){
+        //isti kurac koji si vec pravio majmune hahahahhaahhahahahahaha
        $profesor = Profesor::find(Auth::user()->id);
        $profesor_id =$profesor->id;
 
         $predmeti = Predmet::with('profesor')->whereHas('profesor',function ($query) use($profesor_id){
             return $query->where('profesor_id','=',$profesor_id);
         })->get();
-
-
-
 
         return view('profesorPrikaz.profaispiti',['predmeti' => $predmeti]);
     }

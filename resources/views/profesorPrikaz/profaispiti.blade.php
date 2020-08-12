@@ -27,7 +27,7 @@
 
 </head>
 <body>
-<h2 class="text-center">Prijava Ispita</h2>
+<h2 class="text-center">Prikaz ispita profesora</h2>
 
 
 
