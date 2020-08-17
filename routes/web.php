@@ -29,9 +29,16 @@ Route::put('/ispit-save','MainStudentController@studentPrijava');
 Route::get('/profesor-prikaz','MainProfesorController@profesorPrikaz');
 Route::get('/profesor-ispiti','MainProfesorController@prikzaprofinihispita');
 
+//StudentskaSluzba
+Route::get('/pocetna','MainStudentskaSluzbaController@pocetnaStrana');
+Route::get('/studenti','MainStudentskaSluzbaController@vidiStudente');
+Route::get('/profesori','MainStudentskaSluzbaController@vidiProfesore');
+Route::get('/predmeti','MainStudentskaSluzbaController@vidiPredmete');
 
 //Kolokvijum
 Route::get('/kolokvijum-prikaz','KolokvijumController@kolokvijumPrikaz');
+
+
 
 Auth::routes();
 
